@@ -1,4 +1,4 @@
-The original Flappy Bird Game Developed with Unity (place space to jump).
+The original Flappy Bird Game Developed with Unity (press space to jump).
 
 To play, either:
 
