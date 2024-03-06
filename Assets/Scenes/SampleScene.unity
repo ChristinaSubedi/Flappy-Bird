@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 212998799}
-  flapStrength: 8
+  flapStrength: 6
   logic: {fileID: 0}
   birdIsAlive: 1
   minYPosition: -16.5
@@ -674,7 +674,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -800, y: 442}
+  m_AnchoredPosition: {x: -709, y: 348}
   m_SizeDelta: {x: 300, y: 259}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1417494835
@@ -749,8 +749,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipe: {fileID: 7240258092476402770, guid: c3813c3f537973f389cf95abeb084fbc, type: 3}
-  spawnRate: 2
+  spawnRate: 1
   heightOffset: 10
+  pipeSpeed: 3
 --- !u!4 &1608322875
 Transform:
   m_ObjectHideFlags: 0
