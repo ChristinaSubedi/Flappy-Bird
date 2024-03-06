@@ -11,6 +11,5 @@ or clone, then:
 Sample play:
 
 
-
-https://github.com/ChristinaSubedi/Flappy-Bird/assets/96991580/d25f0aee-8059-47d5-b063-c1491cc8b550
+https://github.com/ChristinaSubedi/Flappy-Bird/assets/96991580/10f1e636-fc1a-4670-8b7e-071e1003c1a3
 
