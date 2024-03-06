@@ -9,6 +9,8 @@ public class BirdScript : MonoBehaviour
 	public float flapStrength;	
     public LogicScript logic;
     public bool birdIsAlive= true;
+    //if goes beneath the screen dead
+    public float minYPosition = -16.5f;
 
     
     // Start is called before the first frame update
@@ -32,6 +34,16 @@ public class BirdScript : MonoBehaviour
         //Vector2.up sets velocity to (0,1) so only in y dir
         	myRigidbody.velocity = Vector2.up * flapStrength ; 
 	}    
+
+            // Check if the bird goes below the minimum Y position
+        if (transform.position.y < minYPosition && birdIsAlive)
+        {
+            // Trigger game over
+            logic.gameOver();
+            birdIsAlive = false;
+        }
+
+       
     }
 
     public void OnCollisionEnter2D(Collision2D collision){//Not trigger objects

@@ -258,9 +258,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 212998799}
-  flapStrength: 6
+  flapStrength: 8
   logic: {fileID: 0}
   birdIsAlive: 1
+  minYPosition: -16.5
 --- !u!50 &212998799
 Rigidbody2D:
   serializedVersion: 4
@@ -403,7 +404,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.21960786, g: 0.09411765, b: 0.21960786, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -673,7 +674,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -743, y: 385}
+  m_AnchoredPosition: {x: -800, y: 442}
   m_SizeDelta: {x: 300, y: 259}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1417494835
