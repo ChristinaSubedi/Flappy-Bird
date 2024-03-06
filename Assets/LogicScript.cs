@@ -1,21 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using TMPro;
+using UnityEngine.UI;//for ScoreText
+using UnityEngine.SceneManagement; //For loading scene
+
 public class LogicScript : MonoBehaviour
 {
 	public int playerScore;
-	//public TMP_Text scoreText;
-	public int Score;
-    // Start is called before the first frame update
-    void Start()
-    {
-        GetComponent<TextMesh>().text="Hi";
+    public Text scoreText;
+    public GameObject gameOverScreen;
+
+    [ContextMenu("increase Score")]//For debugging purpose
+    public void addScore(int scoreToAdd){
+        playerScore += scoreToAdd;
+        scoreText.text= playerScore.ToString();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void restartGame(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);//Reload the curr scene
     }
+
+    public void gameOver(){
+        gameOverScreen.SetActive(true);
+    }
+
 }
